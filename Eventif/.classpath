@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry exported="true" kind="lib" path="/home/laiane/Downloads/Puglins para java/postgresql-9.4-1201.jdbc41.jar"/>
+	<classpathentry kind="lib" path="/home/laiane/Área de Trabalho/jasper-exemplo - TADS/lib/groovy-all-2.0.1.jar"/>
+	<classpathentry kind="lib" path="/home/laiane/Área de Trabalho/jasper-exemplo - TADS/lib/jasperreports-javaflow-6.0.0.jar"/>
+	<classpathentry kind="lib" path="/home/laiane/Área de Trabalho/jasper-exemplo - TADS/lib/jasperreports-6.0.0.jar"/>
+	<classpathentry kind="lib" path="/home/laiane/Área de Trabalho/jasper-exemplo - TADS/lib/jasperreports-fonts-6.0.0.jar"/>
+	<classpathentry kind="lib" path="/home/laiane/Área de Trabalho/jasper-exemplo - TADS/lib/itextpdf-5.5.0.jar"/>
+	<classpathentry kind="lib" path="/home/laiane/Área de Trabalho/jasper-exemplo - TADS/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="/home/laiane/Área de Trabalho/jasper-exemplo - TADS/lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="/home/laiane/Área de Trabalho/jasper-exemplo - TADS/lib/commons-beanutils-1.9.0.jar"/>
+	<classpathentry kind="lib" path="/home/laiane/Área de Trabalho/jasper-exemplo - TADS/lib/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="/home/laiane/Área de Trabalho/jasper-exemplo - TADS/lib/commons-javaflow-20060411.jar"/>
+	<classpathentry kind="lib" path="/home/laiane/Área de Trabalho/jasper-exemplo - TADS/lib/commons-codec-1.5.jar"/>
+	<classpathentry kind="lib" path="/home/laiane/Área de Trabalho/jasper-exemplo - TADS/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/home/laiane/Área de Trabalho/jasper-exemplo - TADS/lib/itext-pdfa-5.5.0.jar"/>
+	<classpathentry kind="lib" path="/home/laiane/Downloads/BarcodeLib_JavaBarcode_Trial.zip"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

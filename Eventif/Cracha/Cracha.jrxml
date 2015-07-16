@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Cracha" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="50864398-fc77-4513-be8d-812138999040">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="nomePessoa" class="java.lang.String"/>
+	<field name="cpf" class="java.lang.String"/>
+	<detail>
+		<band height="410" splitType="Stretch">
+			<rectangle>
+				<reportElement x="51" y="32" width="231" height="254" uuid="92528395-b890-437c-bbda-0d21f61b9e54"/>
+			</rectangle>
+			<image>
+				<reportElement x="113" y="87" width="122" height="73" uuid="34a7816f-d019-4518-bd22-c809dae2939d"/>
+				<imageExpression><![CDATA["/home/laiane/workspace/Eventif/src/br/edu/ifg/tads/jdbc/imagens/nicy.png"]]></imageExpression>
+			</image>
+			<rectangle radius="10">
+				<reportElement x="103" y="180" width="152" height="30" uuid="40b1b384-afe9-4580-afca-832e700bf976"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement x="103" y="223" width="152" height="30" uuid="c3aa9151-c830-4161-9a94-c570b53f3bba"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="62" y="190" width="41" height="20" uuid="91aa4b8b-90cb-4bdd-8c59-cfb22fd59f22"/>
+				<text><![CDATA[Nome:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="62" y="223" width="41" height="20" uuid="bf194fa1-6d38-4945-9081-cce74659a11d"/>
+				<text><![CDATA[CPF:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="113" y="190" width="152" height="20" uuid="9ec255d0-c694-4b5f-9cd2-fc0f808c4bf7"/>
+				<textFieldExpression><![CDATA[$F{nomePessoa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="113" y="233" width="100" height="20" uuid="804ae6f3-1dfe-4b9b-81f6-d5864e83842c"/>
+				<textFieldExpression><![CDATA[$F{cpf}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="62" y="45" width="47" height="42" uuid="cad5631f-2a0e-44b7-a9c5-1bd9a83722d4"/>
+			</rectangle>
+		</band>
+	</detail>
+</jasperReport>

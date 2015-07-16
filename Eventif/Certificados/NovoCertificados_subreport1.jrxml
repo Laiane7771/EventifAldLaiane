@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="NovoCertificados_subreport1" language="groovy" pageWidth="802" pageHeight="555" orientation="Landscape" columnWidth="802" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="22fd42a0-9368-484d-99a2-f72b32967a0e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from atividade]]>
+	</queryString>
+	<field name="nomeatividade" class="java.lang.String"/>
+	<field name="cargahoraria" class="java.lang.Integer"/>
+	<columnHeader>
+		<band height="96" splitType="Stretch">
+			<staticText>
+				<reportElement x="135" y="36" width="100" height="20" uuid="15cb712b-59d3-4cdd-a1ea-768d0d5926b1"/>
+				<text><![CDATA[Nome da Atividade]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="518" y="36" width="100" height="20" uuid="f431df76-bdcb-45b5-b190-a11937626c2c"/>
+				<text><![CDATA[Carga Horaria]]></text>
+			</staticText>
+			<line>
+				<reportElement x="49" y="67" width="662" height="1" uuid="a05edc2d-3e71-4c56-a828-8e479233563d"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="74" y="0" width="262" height="20" uuid="ccf88e41-2706-40a7-b042-e20e7c4d2d97"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nomeatividade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="0" width="204" height="20" uuid="c6eed9a7-660f-475f-9226-83066de8680a"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{cargahoraria}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

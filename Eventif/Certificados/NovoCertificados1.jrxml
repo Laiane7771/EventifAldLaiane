@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Certificados" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5715da8b-832c-4a5c-97cd-c6b6d2891778">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="da96ba45-99be-48aa-8b4b-686dfb7bbd7f"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/home/laiane/workspace/Eventif/Certificados/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="list" class="java.util.List"/>
+	<parameter name="parameter1" class="java.lang.String"/>
+	<field name="nomePessoa" class="java.lang.String"/>
+	<field name="nomeEvento" class="java.lang.String"/>
+	<field name="dataInicio" class="java.lang.String"/>
+	<field name="dataEncerra" class="java.lang.String"/>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<detail>
+		<band height="484">
+			<frame>
+				<reportElement positionType="FixRelativeToBottom" stretchType="RelativeToBandHeight" mode="Transparent" x="13" y="12" width="765" height="460" forecolor="#FF00EE" backcolor="#FF00E0" uuid="47c75681-4a4d-43c3-b04d-d970f9ac9899"/>
+				<box>
+					<pen lineStyle="Dashed"/>
+					<topPen lineStyle="Dashed"/>
+					<leftPen lineStyle="Dashed"/>
+					<bottomPen lineStyle="Dashed"/>
+					<rightPen lineStyle="Dashed"/>
+				</box>
+				<image>
+					<reportElement x="2" y="20" width="314" height="155" uuid="262fb30a-2d9e-4330-98be-54024b0996d3"/>
+					<imageExpression><![CDATA["/home/laiane/Área de Trabalho/TrabalhoIntegrado/Eventif/src/br/edu/ifg/tads/jdbc/imagens/nicy.png"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement x="464" y="20" width="183" height="61" uuid="ba9cd7a4-0314-48b6-97cc-54d2d06f8685"/>
+					<textElement>
+						<font fontName="URW Chancery L" size="48"/>
+					</textElement>
+					<text><![CDATA[Sistema ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="287" y="175" width="132" height="30" uuid="bfd676ca-ae96-4253-90f9-697a6ed07a3e"/>
+					<textElement>
+						<font size="24"/>
+					</textElement>
+					<text><![CDATA[Certificado]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="35" y="224" width="110" height="17" uuid="844c28f1-3b48-47d1-808a-94b6ba020d40"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[Certificamos que ]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="157" y="224" width="298" height="20" uuid="789da6d1-4e14-40b1-a279-11b7524db96f"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nomePessoa}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="455" y="224" width="120" height="20" uuid="733d062f-00e6-43cd-abcb-9caae94891ea"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[Participou do(a)]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="585" y="224" width="130" height="20" uuid="56874df5-7da3-450b-8ff7-60f63490a953"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nomeEvento}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="35" y="255" width="138" height="20" uuid="249da521-1ffd-4662-ad2e-e8d1043f519f"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[durante o periodo de ]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="180" y="255" width="136" height="20" uuid="109a7fa7-5d07-469e-8931-601d1dbe7165"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{dataInicio}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="331" y="255" width="33" height="20" uuid="44c6a71f-232e-4185-b4af-8ebc45b3722f"/>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[à]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="380" y="255" width="119" height="20" uuid="46d31dd9-4437-46fd-828f-f3b58482670d"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{dataEncerra}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="512" y="255" width="100" height="20" uuid="8125cf5b-58d0-4634-9453-0534d46811f0"/>
+					<text><![CDATA[.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="512" y="81" width="174" height="43" uuid="732b0292-da02-4ad2-acb7-761ec0084533"/>
+					<textElement>
+						<font fontName="URW Chancery L" size="24"/>
+					</textElement>
+					<text><![CDATA[de]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="483" y="124" width="232" height="51" uuid="2efe327d-cca0-4244-9c66-2e90e981719c"/>
+					<textElement>
+						<font fontName="URW Chancery L" size="36"/>
+					</textElement>
+					<text><![CDATA[Eventos]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement mode="Transparent" x="2" y="0" width="746" height="443" uuid="5fca6026-fd76-48ab-9b52-1423df857db0"/>
+				</rectangle>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>
